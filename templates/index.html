@@ -1,11 +1,22 @@
 <html>
 <head>
+	<!-- Bootstrap core CSS -->
+  <link id="bootstrap-css" href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link id="clean-blog-css" href="/static/clean-blog.min.css" rel="stylesheet">
+	<!---<link id="style-css" href="/static/style.css" rel="stylesheet">-->
+	<link id="dark_css" href="/static/dark.css" rel="stylesheet">
+
+	<!-- Custom fonts for this template -->
+<link href="/static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 	<title>Cat/Dog image classifier</title>
 </head>
 <body>
 	<form action="/upload" method="post" enctype="multipart/form-data">
-		<input type="file" name="file" />
-		<input type="submit" value="Upload">
+		<input class="btn btn-primary" type="file" name="file" />
+		<input class="btn btn-primary" type="submit" value="Upload">
 	</form>
 	<p>Prediction: {{result}}</p>
 </body>
