@@ -29,4 +29,4 @@ def delete_image_file(image_file_name):
 		os.remove(image_file_name)
 
 if __name__ == '__main__':
-	app.run(debug=True)
+	app.run()
