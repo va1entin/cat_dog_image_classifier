@@ -12,8 +12,6 @@ def upload():
 def success():
 	if request.method == 'POST':
 		f = request.files['file']
-		#print(type(f))
-		#print(dir(f))
 		image_file_name = 'working_dir/' + f.filename
 		f.save(image_file_name)
 		try:

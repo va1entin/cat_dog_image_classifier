@@ -2,15 +2,16 @@ import cv2
 import keras
 import numpy as np
 
-nrows = 150
-ncolumns = 150
+
+px_rows = 150
+px_columns = 150
 
 path = "ml/model_keras.h5"
 model = keras.models.load_model(path)
 model._make_predict_function()
 
 def preprocess_image(image_file):
-    read_image = cv2.resize(cv2.imread(image_file, cv2.IMREAD_COLOR), (nrows,ncolumns), interpolation=cv2.INTER_CUBIC)
+    read_image = cv2.resize(cv2.imread(image_file, cv2.IMREAD_COLOR), (px_rows, px_columns), interpolation=cv2.INTER_CUBIC)
     preprocessed_image = np.expand_dims(read_image, axis=0)
     return preprocessed_image
 
