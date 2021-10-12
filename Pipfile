@@ -10,7 +10,7 @@ flask = "*"
 gunicorn = "*"
 tensorflow = "==1.14.0"
 keras = "==2.2.4"
-opencv-python = "==4.1.2.30"
+opencv-python = "==4.2.0.32"
 
 [requires]
 python_version = "3.7"
